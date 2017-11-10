@@ -9,13 +9,13 @@ log4js.configure({
     appenders: [
         {
           "type": "dateFile",
-          "filename": "./server/log/access.log",
+          "filename": "./log/access.log",
           "pattern": "-yyyy-MM-dd",
           "category": "http"
         },
         {
           "type": "file",
-          "filename": "./server/log/app.log",
+          "filename": "./log/app.log",
           "maxLogSize": 10485760,
           "numBackups": 3
         },
@@ -24,7 +24,7 @@ log4js.configure({
           "level": "ERROR",
           "appender": {
             "type": "file",
-            "filename": "./server/log/errors.log"
+            "filename": "./log/errors.log"
           }
         }
       ]
@@ -45,4 +45,3 @@ app.use(async ctx => {
 })
 
 http.createServer(app.callback()).listen(3000)
-// https.createServer(app.callback()).listen(3001)

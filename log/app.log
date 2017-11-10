@@ -1,0 +1,4 @@
+[2017-11-09 21:24:59.842] [INFO] nkit-api - GET | http://localhost:3000/ |  | - 6
+[2017-11-09 21:25:00.254] [INFO] nkit-api - GET | http://localhost:3000/favicon.ico |  | - 1
+[2017-11-09 21:52:55.469] [INFO] nkit-api - GET | http://localhost:3000/getconfig |  | - 2
+[2017-11-09 21:52:55.631] [INFO] nkit-api - GET | http://localhost:3000/favicon.ico |  | - 1
